@@ -15,6 +15,8 @@ const dbRoute =   'mongodb+srv://nwhaley:blah@cluster0.lltfn.mongodb.net/<dbname
 
 // revisit on credentials
 
+
+
 mongoose.connect(dbRoute, { useNewUrlParser: true});
 
 let db = mongoose.connection;
@@ -22,7 +24,7 @@ let db = mongoose.connection;
 db.once('open', () => console.log('connected to database'))
 
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyPaser.json());
+app.use(bodyParser.json());
 app.use(logger('dev'));
 
 router.get('/getData', (req, res) => {
@@ -69,4 +71,4 @@ router.post('/putData', (req, res) => {
 
 app.use('/api', router);
 
-app.listen(API_PORT, () => console.log('LISTENING ON PORT ${API_PORT}'))
+app.listen(API_PORT, () => console.log('LISTENING ON PORT ' + API_PORT))
