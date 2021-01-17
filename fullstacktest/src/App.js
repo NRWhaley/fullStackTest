@@ -27,7 +27,7 @@ componentDidMount() {
 componentWillUnmount() {
   if(this.state.intervalIsSet) {
     clearInterval(this.state.intervalIsSet);
-    this.setState({intervalIsSet});
+    this.setState({intervalIsSet: null});
   }
 }
 
