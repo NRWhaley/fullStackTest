@@ -70,9 +70,10 @@ deleteFromDB = (idTodelete) => {
   })
 };
 
+//fix update here
 updateDB = (idToUpdate, updateToApply) => {
   let objIdToUpdate = null;
-  parseInt (idToUpdate);
+  parseInt(idToUpdate);
   this.state.data.forEach((dat) => {
     if(dat.id == idToUpdate) {
       objIdToUpdate = dat._id;
@@ -81,7 +82,7 @@ updateDB = (idToUpdate, updateToApply) => {
 
   axios.post('http://localhost:3001/api/updateData', {
     id: objIdToUpdate,
-    update: {mesasge: updateToApply},
+    update: {message: updateToApply},
 
   })
 }
