@@ -4,7 +4,7 @@
   "description": "fullstack template with react-express",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\" "
+    "start": "concurrently \"cd testbackend && node server.js\" \"cd fullstacktest && npm start\" "
   },
   "keywords": [],
   "author": "",
