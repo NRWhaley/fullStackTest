@@ -44,7 +44,7 @@ putDataToDb = (message) => {
   let currentIds = this.state.data.map((data) => data.id);
   let idToBeAdded = 0;
   while(currentIds.includes(idToBeAdded)) {
-    ++idToBeAdded;
+    idToBeAdded++;
   }
 
   axios.post('http://localhost:3001/api/putData', {
