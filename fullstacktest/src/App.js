@@ -132,7 +132,7 @@ updateDB = (idToUpdate, updateToApply) => {
             type="text"
             style={{width: '200px'}}
             onChange= {(e) => this.setState({ idToUpdate: e.target.value})}
-            placeholder="ide of item to update here"
+            placeholder="id of item to update here"
             />
             <input
               type="text"
