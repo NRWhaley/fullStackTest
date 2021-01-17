@@ -27,5 +27,5 @@
     "concurrently": "^5.3.0",
     "mongodb": "^3.6.3"
   },
-  "keywords": []
+  "keywords": [],
 }
