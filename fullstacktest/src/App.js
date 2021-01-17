@@ -5,7 +5,7 @@ import axios from 'axios';
 class App extends Component {
 
 state = {
-  data = [],
+  data : [],
   id: 0,
   message: null,
   intervalIsSet: false,
