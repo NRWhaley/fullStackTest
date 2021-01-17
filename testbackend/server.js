@@ -10,7 +10,8 @@ const app = express();
 app.use(cors());
 const router = express.Router()
 
-const dbRoute =   'mongodb://<your-db-username-here>:<your-db-password-here>@ds249583.mlab.com:49583/fullstack_app';
+const dbRoute =   'mongodb+srv://nwhaley:blah@cluster0.lltfn.mongodb.net/<dbname>?retryWrites=true&w=majority';
+
 
 // revisit on credentials
 
